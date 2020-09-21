@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 /**
  * A react component that shows Congratulatory message when `success` props
@@ -24,5 +25,9 @@ function Congrats(props) {
     return <div data-test="component-congrats" />;
   }
 }
+
+Congrats.propTypes = {
+  success: PropTypes.bool.isRequired,
+};
 
 export default Congrats;
